@@ -1,16 +1,36 @@
 def main():
-    x = get_x("")
+    
+    x, y = get_fraction()
+
+    percentage = round(x / y * 100)
+
+    if percentage <= 1:
+        print("E")
+
+    elif percentage >= 99:
+        print("F")
+
+    else:
+        print(f"{percentage}%")
 
 
-def get_x():
-    while:
+def get_fraction():
+    while True:
         try:
+            parts = input("Fraction: ").split("/" , 1)
 
-
-def xvalue():
-    while:
-        try:
+            x = int(parts[0])
+            y = int(parts[1])
             
+            if x > y or y == 0:
+                continue
+
+            else:
+                return(x, y)
+                
 
 
+        except ValueError:
+            pass
+   
 main()
