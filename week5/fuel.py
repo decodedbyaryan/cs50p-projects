@@ -4,10 +4,6 @@ def main():
     print(gauge(percentage))
 
 
-
-            
-
-
 def convert(fraction):
     parts = fraction.split("/", 1)
 
@@ -22,7 +18,6 @@ def convert(fraction):
             
     else:
         return round(x / y * 100)
-
 
 
 def gauge(percentage):
